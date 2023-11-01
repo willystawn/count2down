@@ -1,0 +1,77 @@
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#countdown {
+  font-size: 10em;
+  text-align: center;
+  animation: zoomInOut 1s;
+  display: none; /* Sembunyikan elemen countdown saat inisialisasi */
+  color: #fff; /* Warna teks putih */
+}
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+#countdown-input {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #09f;
+  border-radius: 5px;
+  outline: none;
+}
+#start-button {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #09f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+#restart-button {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #09f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Sembunyikan tombol "Hitung Ulang" saat tampilan waktu habis */
+  outline: none;
+}
+#repeat-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #09f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Sembunyikan tombol "Ulang Detik" saat inisialisasi */
+  outline: none;
+}
+/* Ganti warna teks menjadi hitam saat waktu habis */
+#countdown.waktu-habis {
+  color: #000;
+}
+/* Ganti latar belakang menjadi merah saat waktu habis */
+body.waktu-habis {
+  background-color: #fff;
+}
