@@ -1,6 +1,4 @@
-# Countdown App
-
-![GitHub Pages](https://github.com/willystawn/count2down/workflows/GitHub%20Pages/badge.svg)
+# Count2down App
 
 Aplikasi countdown sederhana yang memungkinkan Anda untuk mengatur dan memulai hitungan mundur sesuai jumlah detik yang Anda inginkan.
 
